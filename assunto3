@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int filme, quantIngressos;
+    double valorCompra;
+    double precoIngresso = 12.50;
+
+    // Apresentação do sistema
+    printf("Olá, bem-vindo ao sistema de cálculo de compras de ingressos.\n");
+    printf("O valor do ingresso é %.2f reais.\n", precoIngresso);
+
+    // Exibição dos filmes disponíveis
+    printf("Escolha a opção de filme:\n");
+    printf("1. Vingadores 4 – da Marvel\n");
+    printf("2. Como Treinar o Seu Dragão 3\n");
+    printf("3. Dumbo\n");
+    printf("4. Shazam!\n");
+
+    // Entrada da escolha do filme
+    printf("Digite o número correspondente ao filme: ");
+    scanf("%d", &filme);
+
+    // Entrada da quantidade de ingressos
+    printf("Informe a quantidade de ingressos: ");
+    scanf("%d", &quantIngressos);
+
+    // Cálculo do valor total
+    valorCompra = quantIngressos * precoIngresso;
+
+    // Exibição do valor total
+    printf("Para comprar %d ingresso(s) para o filme número %d, você irá gastar R$ %.2f\n", 
+           quantIngressos, filme, valorCompra);
+
+    return 0;
+}
+git init
+git add bilheteria.c
+git commit -m "Adiciona programa de bilheteria em C"
+git remote add origin https://github.com/seu_usuario/CinemaBilheteria.git
+git push -u origin master
