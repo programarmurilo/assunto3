@@ -33,8 +33,4 @@ int main() {
 
     return 0;
 }
-git init
-git add bilheteria.c
-git commit -m "Adiciona programa de bilheteria em C"
-git remote add origin https://github.com/seu_usuario/CinemaBilheteria.git
-git push -u origin master
+
